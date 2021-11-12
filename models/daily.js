@@ -1,17 +1,20 @@
 const { DataTypes } = require("sequelize");
 const db = require("../db");
 const Daily = db.define("daily", {
-
+  date: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
     food: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     water: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     sleep: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     mood: {
@@ -19,7 +22,7 @@ const Daily = db.define("daily", {
       allowNull: false,
     },
     stressLevel: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     exercise: {
@@ -27,7 +30,7 @@ const Daily = db.define("daily", {
       allowNull: false,
     },
     painLevel: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     other: {

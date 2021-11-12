@@ -1,6 +1,5 @@
 const { DataTypes } = require("sequelize");
 const db = require("../db");
-// Example UserTable Build this out Need more columns add it here
 const User = db.define("user", {
   firstName: {
     type: DataTypes.STRING,
@@ -10,8 +9,8 @@ const User = db.define("user", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  role: {
-    type: DataTypes.STRING,
+  isAdmin: {
+    type: DataTypes.BOOLEAN,
     allowNull: false,
   },
   email: {
