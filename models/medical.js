@@ -2,10 +2,10 @@ const { DataTypes } = require("sequelize");
 const db = require("../db");
 const Medical = db.define("medical", {
 	
-  date: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
+  // date: {
+  //   type: DataTypes.STRING,
+  //   allowNull: false,
+  // },
   medicalConditions: {
     type: DataTypes.STRING(1500),
     allowNull: false,

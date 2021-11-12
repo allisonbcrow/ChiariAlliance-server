@@ -1,10 +1,10 @@
 const { DataTypes } = require("sequelize");
 const db = require("../db");
 const Daily = db.define("daily", {
-  date: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
+  // date: {
+  //   type: DataTypes.STRING,
+  //   allowNull: false,
+  // },
     food: {
       type: DataTypes.STRING,
       allowNull: false,
