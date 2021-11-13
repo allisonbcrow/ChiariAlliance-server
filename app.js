@@ -8,15 +8,15 @@ const app = Express();
 const middleware = require("./middleware");
 
 // Import controllers as a bundle
-const controllers = require("./controllers");
+const controllers = require("./controller");
 
 // Parse the body of all requests as JSON
 app.use(middleware.CORS)
 app.use(Express.json());
 app.use("/user", controllers.User);
 
-let daily = require('./controllers/dailycontroller')
-let medical = require('./controllers/medicalcontroller')
+let daily = require('./controller/dailycontroller')
+let medical = require('./controller/medicalcontroller')
 app.use('/daily', daily)
 app.use('/medical', medical)
 
