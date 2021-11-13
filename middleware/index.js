@@ -1,4 +1,4 @@
 module.exports = {
-  CORS: require("./cors"),
+  cors: require("./cors"),
   ValidateJWT: require("./validate-session"),
 };
